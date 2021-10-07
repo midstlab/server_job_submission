@@ -1,0 +1,9 @@
+Number of cores for midst queue in tosun server
+cn10 --> 16 cpu
+cn11 --> 16 cpu
+cn12 --> 24 cpu
+cn13 --> 64 cpu
+cn14 --> 32 cpu
+cn15 --> 48 cpu
+cn16 --> 48 cpu
+cn17 --> 16 cpu
