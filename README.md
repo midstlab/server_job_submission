@@ -1,7 +1,7 @@
 ## To sign up TRUBA please visit:
 ### https://portal.truba.gov.tr/
 
-## For a detailed explanation of submitting a job to a server (TRUBA or tosun), use
+## For a detailed explanation of submitting a job to a server (TRUBA or toSUn), use
 ### job_submitting.txt
 
 ## For information about cores per nodes of midst server in tosun, take a look at:
