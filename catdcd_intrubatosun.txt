@@ -1,0 +1,23 @@
+TOSUN server
+module load vmd-1.9.3-gcc-9.2.0-pzn2lii
+export PATH="/cta/apps/opt/spack/linux-ubuntu16.04-skylake/gcc-9.2.0/vmd-1.9.3-pzn2liis5ggaveir2sttehn5gsdelkz3/lib64/plugins/LINUXAMD64/bin/catdcd5.1:$PATH"
+
+TRUBA
+module load centos7.3/app/vmd/1.9.2
+export PATH="/truba/sw/centos7.3/app/vmd/1.9.2/lib/plugins/LINUXAMD64/bin/catdcd5.1:$PATH"
+
+Example command for cleaning waters
+First to create index file
+vmd -dispdev text -e index_for_cat.tcl
+Then
+catdcd -o eq_first.dcd -i index_file.ind eq01.dcd
+
+Example command to stride
+catdcd -o eq_first.dcd -first 1000 -last 2000 -stride 10 eq01.dcd
+
+	
+After skipping 999 frames, writes the 1000 frame and every 10th
+subsequent frame to eq_first.dcd, until a total of 2000 frames 
+have been read.
+More info:
+https://www.ks.uiuc.edu/Development/MDTools/catdcd/
